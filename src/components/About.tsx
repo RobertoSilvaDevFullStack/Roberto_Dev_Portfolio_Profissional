@@ -30,11 +30,23 @@ export const About = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 slide-in-up">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Sobre Mim
               </span>
             </h2>
+            
+            {/* Declaração de Missão */}
+            <div className="mb-8 fade-in-delayed">
+              <div className="bg-glass border-glass backdrop-blur-glass rounded-lg p-6 max-w-4xl mx-auto">
+                <h3 className="text-2xl font-semibold text-primary mb-4">Minha Missão</h3>
+                <p className="text-lg text-foreground font-medium leading-relaxed">
+                  "Desenvolvedor full stack com paixão por criar experiências de usuário intuitivas e escaláveis, 
+                  transformando ideias em soluções digitais que impactam positivamente a vida das pessoas."
+                </p>
+              </div>
+            </div>
+            
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Sou estudante de Análise e Desenvolvimento de Sistemas com foco em tecnologias modernas. 
               Busco constantemente aprender e aplicar as melhores práticas de desenvolvimento, 
@@ -43,19 +55,22 @@ export const About = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {skills.map((skill) => (
+            {skills.map((skill, index) => (
               <Card 
                 key={skill.title}
-                className="group bg-glass border-glass backdrop-blur-glass hover:shadow-glow-secondary transition-all duration-300 hover:-translate-y-2"
+                className="group bg-glass border-glass backdrop-blur-glass hover-lift hover:shadow-glow-secondary transition-all duration-500 hover:scale-105"
+                style={{
+                  animationDelay: `${index * 0.1}s`
+                }}
               >
                 <CardContent className="p-6 text-center space-y-4">
-                  <div className="text-primary group-hover:text-primary-foreground transition-colors mx-auto w-fit p-3 bg-primary/20 rounded-full group-hover:bg-gradient-primary">
+                  <div className="text-primary group-hover:text-primary-foreground transition-all duration-300 mx-auto w-fit p-3 bg-primary/20 rounded-full group-hover:bg-gradient-primary group-hover:shadow-glow-primary animate-fade-in-up">
                     {skill.icon}
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                     {skill.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
                     {skill.description}
                   </p>
                 </CardContent>
