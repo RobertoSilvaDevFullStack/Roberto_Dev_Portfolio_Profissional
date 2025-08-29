@@ -31,19 +31,19 @@ export const Footer = () => {
           
           <div className="flex gap-6 justify-center">
             <Button variant="ghost" size="sm" asChild className="hover:text-primary hover:bg-glass">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/RobertoSilvaDevFullStack" target="_blank" rel="noopener noreferrer">
                 <Github className="w-6 h-6" />
               </a>
             </Button>
             
             <Button variant="ghost" size="sm" asChild className="hover:text-primary hover:bg-glass">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/roberto-silva-dev-full-stack/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-6 h-6" />
               </a>
             </Button>
             
             <Button variant="ghost" size="sm" asChild className="hover:text-primary hover:bg-glass">
-              <a href="mailto:contato@exemplo.com">
+              <a href="mailto:robertosilva.comercial@gmail.com">
                 <Mail className="w-6 h-6" />
               </a>
             </Button>
@@ -51,7 +51,7 @@ export const Footer = () => {
           
           <div className="pt-8 border-t border-glass">
             <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-              Desenvolvido com <Heart className="w-4 h-4 text-red-500" fill="currentColor" /> por Seu Nome
+              Desenvolvido com <Heart className="w-4 h-4 text-red-500" fill="currentColor" /> por Roberto Silva
             </p>
             <p className="text-xs text-muted-foreground mt-2">
               © 2024 Todos os direitos reservados.

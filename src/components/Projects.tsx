@@ -14,7 +14,7 @@ const fallbackProjects = [
     title: "Dashboard Analytics",
     description: "Painel de controle com visualização de dados em tempo real, desenvolvido para resolver desafios de monitoramento empresarial com interface moderna e métricas de performance.",
     image: projectDashboard,
-    githubUrl: "https://github.com/usuario/dashboard-project",
+    githubUrl: "https://github.com/RobertoSilvaDevFullStack/dashboard-project",
     liveUrl: "https://dashboard-demo.vercel.app",
     technologies: ["React", "TypeScript", "Chart.js", "Tailwind CSS"],
   },
@@ -23,7 +23,7 @@ const fallbackProjects = [
     title: "E-commerce Platform",
     description: "Plataforma completa de e-commerce que resolve problemas de vendas online com carrinho inteligente, sistema de pagamentos seguro e painel administrativo robusto.",
     image: projectEcommerce,
-    githubUrl: "https://github.com/usuario/ecommerce-project",
+    githubUrl: "https://github.com/RobertoSilvaDevFullStack/ecommerce-project",
     liveUrl: "https://ecommerce-demo.vercel.app",
     technologies: ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
   },
@@ -32,14 +32,14 @@ const fallbackProjects = [
     title: "Task Manager App",
     description: "Aplicativo de gerenciamento de tarefas que otimiza produtividade com interface intuitiva, categorias personalizadas e sincronização em tempo real.",
     image: projectMobile,
-    githubUrl: "https://github.com/usuario/task-manager",
+    githubUrl: "https://github.com/RobertoSilvaDevFullStack/task-manager",
     liveUrl: "https://task-manager-demo.vercel.app",
     technologies: ["React Native", "Firebase", "Redux", "TypeScript"],
   },
 ];
 
-// Substitua 'meu_usuario' pelo seu nome de usuário do GitHub
-const GITHUB_USERNAME = "meu_usuario";
+// Substitua 'RobertoSilvaDevFullStack' pelo seu nome de usuário do GitHub
+const GITHUB_USERNAME = "RobertoSilvaDevFullStack";
 
 export const Projects = () => {
   const { repositories, loading, error } = useGitHubRepositories(GITHUB_USERNAME);
@@ -131,7 +131,7 @@ export const Projects = () => {
               asChild
             >
               <a 
-                href={`https://github.com/${GITHUB_USERNAME}`}
+                href={`https://github.com/RobertoSilvaDevFullStack`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

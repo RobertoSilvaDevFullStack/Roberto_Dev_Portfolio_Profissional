@@ -49,19 +49,19 @@ export const Hero = () => {
           
           <div className="flex gap-6 justify-center pt-4">
             <Button variant="ghost" size="sm" asChild className="hover:text-primary hover:bg-glass">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/RobertoSilvaDevFullStack" target="_blank" rel="noopener noreferrer">
                 <Github className="w-6 h-6" />
               </a>
             </Button>
             
             <Button variant="ghost" size="sm" asChild className="hover:text-primary hover:bg-glass">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/roberto-silva-dev-full-stack/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-6 h-6" />
               </a>
             </Button>
             
             <Button variant="ghost" size="sm" asChild className="hover:text-primary hover:bg-glass">
-              <a href="mailto:contato@exemplo.com">
+              <a href="mailto:robertosilva.comercial@gmail.com">
                 <Mail className="w-6 h-6" />
               </a>
             </Button>
